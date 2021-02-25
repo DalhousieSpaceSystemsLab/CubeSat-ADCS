@@ -27,6 +27,7 @@ add_subdirectory(Bdot)
 add_subdirectory(PDcontroller)
 add_subdirectory(googletest)
 add_subdirectory(Sun_Vector_Reference)
+add_subdirectory(Main_Loop)
 
 find_package(Eigen3 3.3 REQUIRED NO_MODULE)
 
