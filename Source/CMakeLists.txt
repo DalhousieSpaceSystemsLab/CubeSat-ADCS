@@ -28,6 +28,7 @@ add_subdirectory(PDcontroller)
 add_subdirectory(googletest)
 add_subdirectory(Sun_Vector_Reference)
 add_subdirectory(Main_Loop)
+add_subdirectory(Main_Loop/cppTimer)
 
 find_package(Eigen3 3.3 REQUIRED NO_MODULE)
 
@@ -43,7 +44,7 @@ target_link_libraries(ADCS PUBLIC Q_Method)
 target_link_libraries(ADCS PUBLIC Bdot)
 target_link_libraries(ADCS PUBLIC PDcontroller)
 target_link_libraries(ADCS PUBLIC Sun_Vector_Reference)
-
+target_link_libraries(ADCS PUBLIC cpptimer)
 
 target_include_directories(ADCS PUBLIC
                             "${PROJECT_BINARY_DIR}"
@@ -55,5 +56,6 @@ target_include_directories(ADCS PUBLIC
                             "${PROJECT_SOURCE_DIR}/Q_Method"
                             "${PROJECT_SOURCE_DIR}/Bdot"
 			                "${PROJECT_SOURCE_DIR}/PDcontroller"
-		       	            "${PROJECT_SOURCE_DIR}/Sun_Vector_Reference"
+                            "${PROJECT_SOURCE_DIR}/Sun_Vector_Reference"
+                            "${PROJECT_SOURCE_DIR}/Main_Loop/cppTimer"
                             )

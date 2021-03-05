@@ -1,3 +1,6 @@
 [submodule "JTOK"]
 	path = JTOK
 	url = https://github.com/cmattatall/JTOK
+[submodule "/home/oem/LORIS/CubeSat-ADCS/Source/Main_Loop/cppTimer"]
+	path = /home/oem/LORIS/CubeSat-ADCS/Source/Main_Loop/cppTimer
+	url = https://github.com/berndporr/cppTimer.git

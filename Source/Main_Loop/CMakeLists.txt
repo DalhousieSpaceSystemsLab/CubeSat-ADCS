@@ -6,4 +6,4 @@ set(Sources main_loop.cpp)
 
 add_executable(${This} ${Sources})
 
-target_include_directories(SunVector PUBLIC /usr/include/eigen3)
+target_link_libraries(${This} PUBLIC cpptimer)
